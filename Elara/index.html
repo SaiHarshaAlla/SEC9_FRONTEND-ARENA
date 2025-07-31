@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <title>Elara - Shop the Trend</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a2e0e6adcd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">🛒 Elara</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <main>
+    <section class="product-scroll-container">
+        <div class="horizontal-products">
+          <!-- Product 1 -->
+<div class="product-card" data-id="1">
+    <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="Fjallraven Backpack">
+    <h2>Fjallraven Backpack</h2>
+    <p>$49.99</p>
+    <div class="qty-control">
+      <button onclick="updateQuantity(1, -1)">−</button>
+      <span id="qty-1">0</span>
+      <button onclick="updateQuantity(1, 1)">+</button>
+    </div>
+    <button onclick="addToCart(1)">Add to Cart</button>
+    <button onclick="buyNow(1)">Buy Now</button>
+  </div>
+  
+  <!-- Product 2 -->
+  <div class="product-card" data-id="2">
+    <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" alt="Cotton T-Shirt">
+    <h2>Men's Cotton T-Shirt</h2>
+    <p>$15.99</p>
+    <div class="qty-control">
+      <button onclick="updateQuantity(2, -1)">−</button>
+      <span id="qty-2">0</span>
+      <button onclick="updateQuantity(2, 1)">+</button>
+    </div>
+    <button onclick="addToCart(2)">Add to Cart</button>
+    <button onclick="buyNow(2)">Buy Now</button>
+  </div>
+  
+  <!-- Product 3 -->
+  <div class="product-card" data-id="3">
+    <img src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg" alt="Samsung Monitor">
+    <h2>Samsung Monitor 24"</h2>
+    <p>$149.99</p>
+    <div class="qty-control">
+      <button onclick="updateQuantity(3, -1)">−</button>
+      <span id="qty-3">0</span>
+      <button onclick="updateQuantity(3, 1)">+</button>
+    </div>
+    <button onclick="addToCart(3)">Add to Cart</button>
+    <button onclick="buyNow(3)">Buy Now</button>
+  </div>
+  
+  <!-- Product 4 -->
+  <div class="product-card" data-id="4">
+    <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="Casual Sneakers">
+    <h2>Casual Sneakers</h2>
+    <p>$39.99</p>
+    <div class="qty-control">
+      <button onclick="updateQuantity(4, -1)">−</button>
+      <span id="qty-4">0</span>
+      <button onclick="updateQuantity(4, 1)">+</button>
+    </div>
+    <button onclick="addToCart(4)">Add to Cart</button>
+    <button onclick="buyNow(4)">Buy Now</button>
+  </div>
+  
+  <!-- Product 5 -->
+  <div class="product-card" data-id="5">
+    <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" alt="Gold Earrings">
+    <h2>Gold Plated Earrings</h2>
+    <p>$29.99</p>
+    <div class="qty-control">
+      <button onclick="updateQuantity(5, -1)">−</button>
+      <span id="qty-5">0</span>
+      <button onclick="updateQuantity(5, 1)">+</button>
+    </div>
+    <button onclick="addToCart(5)">Add to Cart</button>
+    <button onclick="buyNow(5)">Buy Now</button>
+  </div>
+  
+  <!-- Product 6 -->
+  <div class="product-card" data-id="6">
+    <img src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_.jpg" alt="Winter Jacket">
+    <h2>Men's Winter Jacket</h2>
+    <p>$89.99</p>
+    <div class="qty-control">
+      <button onclick="updateQuantity(6, -1)">−</button>
+      <span id="qty-6">0</span>
+      <button onclick="updateQuantity(6, 1)">+</button>
+    </div>
+    <button onclick="addToCart(6)">Add to Cart</button>
+    <button onclick="buyNow(6)">Buy Now</button>
+  </div>
+  
+  <!-- Product 7 -->
+  <div class="product-card" data-id="7">
+    <img src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg" alt="Running Shoes">
+    <h2>Running Shoes</h2>
+    <p>$59.99</p>
+    <div class="qty-control">
+      <button onclick="updateQuantity(7, -1)">−</button>
+      <span id="qty-7">0</span>
+      <button onclick="updateQuantity(7, 1)">+</button>
+    </div>
+    <button onclick="addToCart(7)">Add to Cart</button>
+    <button onclick="buyNow(7)">Buy Now</button>
+  </div>
+  
+  <!-- Product 8 -->
+  <div class="product-card" data-id="8">
+    <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" alt="Leather Handbag">
+    <h2>Leather Handbag</h2>
+    <p>$74.99</p>
+    <div class="qty-control">
+      <button onclick="updateQuantity(8, -1)">−</button>
+      <span id="qty-8">0</span>
+      <button onclick="updateQuantity(8, 1)">+</button>
+    </div>
+    <button onclick="addToCart(8)">Add to Cart</button>
+    <button onclick="buyNow(8)">Buy Now</button>
+  </div>
+  
+  <!-- Product 9 -->
+  <div class="product-card" data-id="9">
+    <img src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg" alt="Apple Watch">
+    <h2>Apple Watch Series 6</h2>
+    <p>$399.99</p>
+    <div class="qty-control">
+      <button onclick="updateQuantity(9, -1)">−</button>
+      <span id="qty-9">0</span>
+      <button onclick="updateQuantity(9, 1)">+</button>
+    </div>
+    <button onclick="addToCart(9)">Add to Cart</button>
+    <button onclick="buyNow(9)">Buy Now</button>
+  </div>
+  
+  <!-- Product 10 -->
+  <div class="product-card" data-id="10">
+    <img src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg" alt="Gaming Headset">
+    <h2>Gaming Headset</h2>
+    <p>$49.99</p>
+    <div class="qty-control">
+      <button onclick="updateQuantity(10, -1)">−</button>
+      <span id="qty-10">0</span>
+      <button onclick="updateQuantity(10, 1)">+</button>
+    </div>
+    <button onclick="addToCart(10)">Add to Cart</button>
+    <button onclick="buyNow(10)">Buy Now</button>
+  </div>
+  
+  
+    
+      <!-- Add more products like above with unique data-id -->
+    </section>
+  </main>
+
+  <footer><p>&copy; 2025 Elara. All rights reserved.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
